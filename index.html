@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gatefilm – Departures for Travel Video Creators</title>
+<meta name="description" content="A departures board of eight filming destinations for travel TikTok creators and tour operators, with gate-by-gate shot ideas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9e7e1;--panel:#fff;--navy:#0a2a5e;--ink:#0d1b33;--muted:#4b5a73;--sig:#ffd21f;--sig-ink:#0d1b33;--ok:#0c7a4d;--line:#c9c5ba;--board:#0a2a5e;--board-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1426;--panel:#111e38;--navy:#16408a;--ink:#eef1f7;--muted:#a3b0c7;--ok:#4fd39a;--line:#26385c;--board:#071123;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1426;--panel:#111e38;--navy:#16408a;--ink:#eef1f7;--muted:#a3b0c7;--ok:#4fd39a;--line:#26385c;--board:#071123;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed",Barlow,sans-serif;margin:0;text-transform:none;letter-spacing:.005em;line-height:1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sig);outline-offset:2px;box-shadow:0 0 0 5px var(--ink)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.bar{background:var(--sig);color:var(--sig-ink)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font:800 1.7rem "Barlow Condensed",sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo b{display:grid;place-items:center;width:34px;height:34px;background:var(--sig-ink);color:var(--sig);border-radius:6px;font-size:1.2rem}
+.bar nav{display:flex;gap:6px;flex-wrap:wrap}
+.bar nav a{text-decoration:none;font-weight:600;padding:6px 12px;border-radius:6px}
+.bar nav a:hover{background:var(--sig-ink);color:var(--sig)}
+.hero{padding:54px 0 34px;display:grid;grid-template-columns:1fr;gap:20px}
+.hero h1{font-size:clamp(3rem,9vw,7rem);font-weight:800;max-width:11em}
+.hero p{font-size:1.2rem;color:var(--muted);max-width:36em;margin:0}
+.btn{display:inline-block;background:var(--navy);color:#fff;font:800 1.15rem "Barlow Condensed",sans-serif;letter-spacing:.04em;padding:14px 28px;border-radius:8px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.btn.sig{background:var(--sig);color:var(--sig-ink)}
+.btn.sig:hover{background:var(--sig-ink);color:var(--sig)}
+.btn.out{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.out:hover{background:var(--ink);color:var(--bg)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.board{background:var(--board);color:var(--board-ink);border-radius:14px;overflow:hidden;margin-top:14px}
+.bh{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--sig);color:var(--sig-ink);padding:12px 20px}
+.bh h2{font-size:1.9rem;font-weight:800}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{border:0;background:rgba(13,27,51,.12);color:var(--sig-ink);font:600 .92rem Barlow,sans-serif;padding:6px 12px;border-radius:6px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--sig-ink);color:var(--sig)}
+.cols,.rw summary{display:grid;grid-template-columns:90px 1.4fr 1.6fr 1fr;gap:14px;align-items:center;padding:14px 20px}
+.cols{font:600 .85rem Barlow,sans-serif;color:#a9bddf;border-bottom:1px solid rgba(255,255,255,.18)}
+.rw{border-bottom:1px solid rgba(255,255,255,.12)}
+.rw[hidden]{display:none}
+.rw summary{list-style:none;cursor:pointer}
+.rw summary::-webkit-details-marker{display:none}
+.rw summary:hover{background:rgba(255,255,255,.07)}
+.t{font:800 1.5rem "Barlow Condensed",sans-serif;color:var(--sig)}
+.d{font:800 1.7rem "Barlow Condensed",sans-serif}
+.d small{display:block;font:400 .85rem Barlow,sans-serif;color:#a9bddf}
+.g{color:#dbe6fa}
+.s{display:flex;align-items:center;gap:8px;font-weight:600}
+.s::before{content:"";width:10px;height:10px;border-radius:50%;background:#43d68f;flex:none}
+.rw[open] .s::after{content:"▴";margin-left:auto}
+.rw:not([open]) .s::after{content:"▾";margin-left:auto}
+.more{padding:4px 20px 22px 124px;display:grid;grid-template-columns:1fr 1fr;gap:16px 30px;color:#dbe6fa}
+.more h3{font-size:1.1rem;color:var(--sig);margin-bottom:4px}
+.more p{margin:0;font-size:.98rem}
+@keyframes flip{from{transform:rotateX(90deg);opacity:0}to{transform:none;opacity:1}}
+.board .d{animation:flip .5s ease-out both}
+.rw:nth-of-type(2) .d{animation-delay:.05s}.rw:nth-of-type(3) .d{animation-delay:.1s}.rw:nth-of-type(4) .d{animation-delay:.15s}.rw:nth-of-type(5) .d{animation-delay:.2s}.rw:nth-of-type(6) .d{animation-delay:.25s}.rw:nth-of-type(7) .d{animation-delay:.3s}.rw:nth-of-type(8) .d{animation-delay:.35s}.rw:nth-of-type(9) .d{animation-delay:.4s}
+section{padding:64px 0}
+.h{margin-bottom:28px;max-width:38em}
+.h h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800}
+.h p{color:var(--muted);margin:12px 0 0}
+.pass{display:grid;grid-template-columns:repeat(4,1fr);background:var(--panel);border-radius:16px;box-shadow:0 8px 26px rgba(10,42,94,.14);overflow:hidden}
+.pass div{padding:24px 22px;border-right:2px dashed var(--line)}
+.pass div:last-child{border:0}
+.pass h3{font-size:1.5rem;margin-bottom:8px;color:var(--navy)}
+.pass p{margin:0;color:var(--muted);font-size:.97rem}
+.pass .n{display:inline-block;background:var(--sig);color:var(--sig-ink);font:800 .95rem "Barlow Condensed",sans-serif;padding:2px 10px;border-radius:5px;margin-bottom:10px}
+.desk{display:grid;grid-template-columns:1fr 1.15fr;gap:46px;align-items:start}
+.faq details{background:var(--panel);border-radius:12px;margin-bottom:12px;border:1px solid var(--line)}
+.faq summary{cursor:pointer;padding:16px 20px;font:800 1.35rem "Barlow Condensed",sans-serif;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--navy);font-size:1.5rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:0;padding:0 20px 18px;color:var(--muted)}
+.ticket{display:grid;grid-template-columns:1fr auto;background:var(--sig);color:var(--sig-ink);border-radius:18px;overflow:hidden}
+.ticket .l{padding:38px 34px}
+.ticket h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800}
+.ticket p{margin:12px 0 22px;max-width:30em}
+.ticket .r{background:var(--sig-ink);color:var(--sig);padding:34px 28px;border-left:3px dashed var(--sig);display:grid;align-content:center;gap:4px;font:600 1rem Barlow,sans-serif}
+.ticket .r b{font:800 2.6rem "Barlow Condensed",sans-serif}
+.ticket .btn{background:var(--sig-ink);color:var(--sig)}
+footer{background:var(--board);color:#dbe6fa;padding:50px 0 40px;margin-top:20px;font-size:.94rem}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer h4{font:800 1.2rem "Barlow Condensed",sans-serif;color:var(--sig);margin:0 0 10px}
+footer a,footer .lnk{display:block;color:#dbe6fa;text-decoration:none;background:none;border:0;padding:3px 0;font:inherit;cursor:pointer;text-align:left}
+footer a:hover,footer .lnk:hover{color:#fff;text-decoration:underline}
+address{font-style:normal}
+.fine{margin-top:28px;font-size:.82rem;color:#a9bddf;border-top:1px solid rgba(255,255,255,.18);padding-top:20px}
+dialog{border:0;border-radius:14px;max-width:660px;width:calc(100% - 28px);padding:0;background:var(--panel);color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(5,12,30,.65)}
+.dlg{padding:26px 28px;max-height:82vh;overflow:auto}
+.dlg h2{font-size:2rem;margin-bottom:4px}
+.dlg h3{font-size:1.25rem;margin:18px 0 4px;color:var(--navy)}
+.dlg p{color:var(--muted);font-size:.95rem;margin:4px 0}
+.dlg table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
+.dlg th,.dlg td{text-align:left;border-bottom:1px solid var(--line);padding:7px 6px;color:var(--muted);vertical-align:top}
+.dlg th{color:var(--ink)}
+#cc{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--sig);color:var(--sig-ink);padding:16px 0 calc(16px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 24px rgba(0,0,0,.25);display:none}
+#cc.show{display:block}
+#cc .in{max-width:1120px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+#cc h2{font-size:1.5rem;font-weight:800;margin-bottom:4px}
+#cc p{margin:0;font-size:.93rem;line-height:1.45}
+#cc .lk{display:inline;background:none;border:0;padding:0;font:inherit;text-decoration:underline;cursor:pointer;color:inherit}
+#cc .btn{padding:10px 18px;font-size:1rem}
+#cc .btn.out{box-shadow:inset 0 0 0 2px var(--sig-ink);color:var(--sig-ink)}
+#cc .btn.out:hover{background:var(--sig-ink);color:var(--sig)}
+#cc .acts{display:flex;gap:10px;flex-wrap:wrap}
+.prefs{display:none;grid-column:1/-1;gap:2px}
+.prefs.open{display:grid}
+.prefs label{display:flex;gap:10px;padding:7px 0;border-top:2px solid rgba(13,27,51,.35);font-size:.9rem}
+.prefs input{margin-top:3px;width:18px;height:18px;accent-color:#0a2a5e}
+@media (max-width:860px){
+ .cols{display:none}
+ .rw summary{grid-template-columns:70px 1fr;row-gap:4px}
+ .rw summary .g{grid-column:2}.rw summary .s{grid-column:2}
+ .more{padding:4px 20px 20px;grid-template-columns:1fr}
+ .pass{grid-template-columns:1fr 1fr}.pass div{border-bottom:2px dashed var(--line)}
+ .desk,.fg,#cc .in{grid-template-columns:1fr}
+ .ticket{grid-template-columns:1fr}.ticket .r{border-left:0;border-top:3px dashed var(--sig)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.board .d{animation:none}}
+</style>
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <a class="logo" href="#top"><b>G</b>Gatefilm</a>
+  <nav><a href="#board">Departures</a><a href="#flow">How it works</a><a href="#desk">Operators</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap">
+  <div class="hero">
+    <h1>Next stop: your best travel video yet.</h1>
+    <p>Gatefilm lists eight destinations that shoot beautifully in vertical, with the gate-by-gate details creators and tour operators need: the first frame, the light and the right month to go.</p>
+    <div class="row"><a class="btn sig" href="#board">See departures</a><a class="btn out" href="#desk">Operator check-in</a></div>
+  </div>
+
+  <div class="board" id="board">
+    <div class="bh"><h2>Departures</h2>
+      <div class="tabs" role="group" aria-label="Filter by region">
+        <button data-r="all" aria-pressed="true">All</button><button data-r="eu" aria-pressed="false">Europe</button><button data-r="me" aria-pressed="false">Africa and Middle East</button><button data-r="as" aria-pressed="false">Asia</button><button data-r="am" aria-pressed="false">Americas</button>
+      </div>
+    </div>
+    <div class="cols" aria-hidden="true"><span>Best time</span><span>Destination</span><span>Opening shot</span><span>Light</span></div>
+
+    <details class="rw" data-r="eu"><summary><span class="t">Jun</span><span class="d">Dubrovnik<small>Croatia</small></span><span class="g">City walls at golden hour</span><span class="s">Late afternoon</span></summary><div class="more"><div><h3>The shot</h3><p>Walk the walls with the sun low, then turn the phone toward the orange rooftops and the Adriatic.</p></div><div><h3>Plan it</h3><p>Go in May, June or September. Enter at opening time to beat the cruise crowds.</p></div></div></details>
+    <details class="rw" data-r="me"><summary><span class="t">Mar</span><span class="d">Petra<small>Jordan</small></span><span class="g">Siq canyon reveal</span><span class="s">Early morning</span></summary><div class="more"><div><h3>The shot</h3><p>Film the narrow Siq in a steady walk, ending on the first glimpse of the Treasury.</p></div><div><h3>Plan it</h3><p>Visit March–May or October–November. Tripods may need permission, so ask at the gate.</p></div></div></details>
+    <details class="rw" data-r="me"><summary><span class="t">Aug</span><span class="d">Zanzibar<small>Tanzania</small></span><span class="g">Dhow sailing at dusk</span><span class="s">Sunset</span></summary><div class="more"><div><h3>The shot</h3><p>Low angle from the beach as a wooden dhow crosses the sun, then cut to Stone Town’s alleys.</p></div><div><h3>Plan it</h3><p>Dry months are June–October and January–February. Ask boat crews before filming them.</p></div></div></details>
+    <details class="rw" data-r="eu"><summary><span class="t">Feb</span><span class="d">Lofoten<small>Norway</small></span><span class="g">Red cabins under the aurora</span><span class="s">Night and blue hour</span></summary><div class="more"><div><h3>The shot</h3><p>Timelapse of green aurora over rorbu cabins, with a warm window light in the foreground.</p></div><div><h3>Plan it</h3><p>Aurora season runs September–March. Bring spare batteries, the cold drains them fast.</p></div></div></details>
+    <details class="rw" data-r="as"><summary><span class="t">Nov</span><span class="d">Jaipur<small>India</small></span><span class="g">Amber Fort at sunrise</span><span class="s">First light</span></summary><div class="more"><div><h3>The shot</h3><p>Slow tilt up the fort walls with the sun rising, then a handheld walk through the courtyards.</p></div><div><h3>Plan it</h3><p>October–March is comfortable. Check camera and drone rules at each monument.</p></div></div></details>
+    <details class="rw" data-r="am"><summary><span class="t">Apr</span><span class="d">Uyuni<small>Bolivia</small></span><span class="g">Mirror salt flat</span><span class="s">Sunrise and sunset</span></summary><div class="more"><div><h3>The shot</h3><p>Walk toward the horizon on the thin water layer so sky and ground merge into one frame.</p></div><div><h3>Plan it</h3><p>Rainy season, roughly January–April, brings the mirror. Go with a licensed local guide.</p></div></div></details>
+    <details class="rw" data-r="as"><summary><span class="t">Oct</span><span class="d">Seychelles<small>La Digue</small></span><span class="g">Granite boulders and turquoise sea</span><span class="s">Morning</span></summary><div class="more"><div><h3>The shot</h3><p>Bike along the coast and cut to a wide of Anse Source d’Argent with clear water in front.</p></div><div><h3>Plan it</h3><p>April–May and October–November are calm. Tide changes the look, so check it before you shoot.</p></div></div></details>
+    <details class="rw" data-r="eu"><summary><span class="t">Jul</span><span class="d">Faroe Islands<small>Denmark</small></span><span class="g">Grass-roof village in the mist</span><span class="s">Soft overcast</span></summary><div class="more"><div><h3>The shot</h3><p>Start on a waterfall dropping into the sea, then move to a quiet village with turf roofs.</p></div><div><h3>Plan it</h3><p>June–August has the longest days. Weather changes fast, so keep a rain cover on the phone.</p></div></div></details>
+  </div>
+</div>
+
+<section id="flow"><div class="wrap">
+  <div class="h"><h2>Boarding in four steps</h2><p>Every Gatefilm trip follows the same route, from planning to posting.</p></div>
+  <div class="pass">
+    <div><span class="n">Step 1</span><h3>Pick a gate</h3><p>Choose a destination by month, region and mood.</p></div>
+    <div><span class="n">Step 2</span><h3>Plan the light</h3><p>Match each shoot to sunrise, sunset or blue hour.</p></div>
+    <div><span class="n">Step 3</span><h3>Film vertical</h3><p>Frame in 9:16 and keep the action centered.</p></div>
+    <div><span class="n">Step 4</span><h3>Land the post</h3><p>Tight cut, clear caption, one local detail.</p></div>
+  </div>
+</div></section>
+
+<section id="desk"><div class="wrap desk">
+  <div class="h" style="margin:0"><h2>Operator check-in</h2><p>Tour operators and tourism boards use Gatefilm to turn their itineraries into footage people want to share. Here are the questions we hear most.</p></div>
+  <div class="faq">
+    <details open><summary>What do you deliver?</summary><p>Location briefs with shot ideas, light timing and access notes, plus day plans built for filming.</p></details>
+    <details><summary>Do you run creator trips?</summary><p>Yes. We design hosted itineraries with clear deliverables and require partnerships to be disclosed in every post.</p></details>
+    <details><summary>Can you train our guides?</summary><p>We run short phone-filming workshops covering hooks, framing, captions and a posting routine your team can keep up.</p></details>
+    <details><summary>How fast do you reply?</summary><p>Within two business days. Send us a destination and a date and we’ll take it from there.</p></details>
+  </div>
+</div></section>
+
+<section id="contact" style="padding-top:20px"><div class="wrap">
+  <div class="ticket">
+    <div class="l"><h2>Your gate is open.</h2><p>Tell us where you want to film and when. We’ll send back a plan.</p><a class="btn" href="mailto:hello@gatefilm.example">Email Gatefilm</a></div>
+    <div class="r"><span>Flight</span><b>GF 2026</b><span>Boarding now</span></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><a class="logo" href="#top" style="color:#fff"><b>G</b>Gatefilm</a>
+      <address style="margin-top:12px">Gatefilm Ltd.<br>Unit 12, 88 Kestrel Quay<br>Bristol BS1 4RT, United Kingdom<br>hello@gatefilm.example<br>+44 117 496 0152</address></div>
+    <div><h4>Explore</h4><a href="#board">Departures</a><a href="#flow">How it works</a><a href="#desk">Operators</a><a href="#contact">Contact</a></div>
+    <div><h4>Legal</h4><button class="lnk" data-open="privacy">Privacy Policy</button><button class="lnk" data-open="cookies">Cookie Policy</button><button class="lnk" data-open="terms">Terms of Use</button><button class="lnk" id="cc-reopen">Cookie settings</button></div>
+  </div>
+  <p class="fine">© 2026 Gatefilm Ltd. Destination details are editorial suggestions and may change. Check local rules, drone laws and permits before filming. TikTok is a trademark of its owner; Gatefilm is not affiliated with or endorsed by TikTok.</p>
+</div></footer>
+
+<div id="cc" role="dialog" aria-labelledby="cc-t"><div class="in">
+  <div><h2 id="cc-t">Cookie preferences</h2><p>We use essential cookies to run this site. With your consent we also use analytics and advertising cookies, including Google’s. You can change this at any time. See the <button class="lk" data-open="cookies">Cookie Policy</button>.</p></div>
+  <div class="acts"><button class="btn" id="cc-all">Accept all</button><button class="btn out" id="cc-none">Reject non-essential</button><button class="btn out" id="cc-cust">Customize</button><button class="btn" id="cc-save" style="display:none">Save choices</button></div>
+  <div class="prefs" id="prefs">
+    <label><input type="checkbox" checked disabled><span><b>Necessary.</b> Security and remembering your choice. Always on.</span></label>
+    <label><input type="checkbox" id="c-an"><span><b>Analytics.</b> Aggregated visit statistics, e.g. Google Analytics.</span></label>
+    <label><input type="checkbox" id="c-ad"><span><b>Advertising.</b> Ad measurement and personalization, e.g. Google Ads.</span></label>
+  </div>
+</div></div>
+
+<dialog id="privacy"><div class="dlg"><button class="btn out" data-close style="float:right;padding:6px 16px">Close</button><h2>Privacy Policy</h2><p>Last updated: November 13, 2026</p>
+<h3>Who we are</h3><p>Gatefilm Ltd., Unit 12, 88 Kestrel Quay, Bristol BS1 4RT, United Kingdom, is the controller of personal data processed through this site. Contact: hello@gatefilm.example.</p>
+<h3>What we collect</h3><p>Details you send by email (name, email address, message) and, only with your consent, cookie data such as pages viewed, approximate location, device and browser type.</p>
+<h3>Why we use it</h3><p>To reply to you (legitimate interest), to improve the site (consent for analytics) and to measure advertising (consent).</p>
+<h3>Google services</h3><p>If you accept analytics or advertising cookies, Google may process data under its own policies; see policies.google.com/technologies/partner-sites. Google Consent Mode keeps storage denied until you choose.</p>
+<h3>Retention and sharing</h3><p>Enquiry emails are kept up to 24 months. We share data only with service providers acting for us, such as email and analytics tools, or when the law requires.</p>
+<h3>Your rights</h3><p>Under UK GDPR, EU GDPR and similar laws you can access, correct, delete or port your data, object to processing, withdraw consent anytime and complain to the Information Commissioner’s Office or your local regulator. We do not sell personal information.</p>
+<h3>Children</h3><p>This site is not directed at children under 16.</p></div></dialog>
+
+<dialog id="cookies"><div class="dlg"><button class="btn out" data-close style="float:right;padding:6px 16px">Close</button><h2>Cookie Policy</h2><p>Last updated: November 13, 2026</p>
+<p>Cookies and similar tools such as local storage are small files kept on your device. We ask for consent before using any that are not strictly necessary, and rejecting is as easy as accepting.</p>
+<table><tr><th>Category</th><th>Purpose</th><th>Duration</th></tr>
+<tr><td>Necessary</td><td>Stores your choice (gatefilm_consent)</td><td>12 months</td></tr>
+<tr><td>Analytics</td><td>Measures visits, e.g. Google Analytics (_ga, _ga_*)</td><td>Up to 24 months</td></tr>
+<tr><td>Advertising</td><td>Ad measurement, e.g. Google Ads (_gcl_*, IDE)</td><td>Up to 13 months</td></tr></table>
+<h3>Change your mind</h3><p>Use “Cookie settings” in the footer at any time, or block and delete cookies in your browser settings.</p>
+<h3>Consent signals</h3><p>Where Google tags are used, your choice is passed through Google Consent Mode (analytics_storage, ad_storage, ad_user_data and ad_personalization default to denied).</p></div></dialog>
+
+<dialog id="terms"><div class="dlg"><button class="btn out" data-close style="float:right;padding:6px 16px">Close</button><h2>Terms of Use</h2><p>Last updated: November 13, 2026</p>
+<p>Content here is for general inspiration. Conditions, access rules, drone regulations and seasons change, so verify details with local authorities and providers before you travel or film.</p>
+<p>All text and design belong to Gatefilm Ltd. and may not be copied without permission. We are not liable for loss arising from reliance on this information, except where the law does not allow us to exclude liability. These terms are governed by the laws of England and Wales.</p></div></dialog>
+
+<script>
+(function(){
+  var KEY="gatefilm_consent",cc=document.getElementById("cc");
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments)}
+  gtag("consent","default",{ad_storage:"denied",analytics_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",wait_for_update:500});
+  function read(){try{return JSON.parse(localStorage.getItem(KEY))}catch(e){return null}}
+  function write(v){try{localStorage.setItem(KEY,JSON.stringify(v))}catch(e){}}
+  function apply(v){
+    gtag("consent","update",{analytics_storage:v.an?"granted":"denied",ad_storage:v.ad?"granted":"denied",ad_user_data:v.ad?"granted":"denied",ad_personalization:v.ad?"granted":"denied"});
+    // Load Google tags here ONLY when v.an or v.ad is true (add your own tag ID).
+  }
+  function choose(an,ad){var v={an:an,ad:ad,t:Date.now()};write(v);apply(v);cc.classList.remove("show")}
+  function show(){var v=read()||{};document.getElementById("c-an").checked=!!v.an;document.getElementById("c-ad").checked=!!v.ad;cc.classList.add("show")}
+  var s=read();if(s){apply(s)}else{show()}
+  document.getElementById("cc-all").onclick=function(){choose(true,true)};
+  document.getElementById("cc-none").onclick=function(){choose(false,false)};
+  document.getElementById("cc-cust").onclick=function(){document.getElementById("prefs").classList.add("open");this.style.display="none";document.getElementById("cc-save").style.display="inline-block"};
+  document.getElementById("cc-save").onclick=function(){choose(document.getElementById("c-an").checked,document.getElementById("c-ad").checked)};
+  document.getElementById("cc-reopen").onclick=show;
+  document.querySelectorAll("[data-open]").forEach(function(b){b.onclick=function(){var d=document.getElementById(b.dataset.open);if(d.showModal)d.showModal()}});
+  document.querySelectorAll("[data-close]").forEach(function(b){b.onclick=function(){b.closest("dialog").close()}});
+  document.querySelectorAll("dialog").forEach(function(d){d.addEventListener("click",function(e){if(e.target===d)d.close()})});
+  var tb=document.querySelectorAll("[data-r].tabs button,.tabs [data-r]"),rows=document.querySelectorAll(".rw");
+  tb.forEach(function(b){b.onclick=function(){tb.forEach(function(x){x.setAttribute("aria-pressed",x===b)});rows.forEach(function(r){r.hidden=!(b.dataset.r==="all"||r.dataset.r===b.dataset.r)})}});
+})();
+</script>
+</body>
+</html>
